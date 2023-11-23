@@ -26,7 +26,7 @@ void loop() {
   int RAIN = analogRead(RN);
   Serial.println(RAIN);
   lcd_clear();
-  lcd_send_int("Rain", RAIN);
+  lcd_send_int("Rain:", RAIN);
   delay(500);
 }
 

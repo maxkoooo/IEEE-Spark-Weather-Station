@@ -90,6 +90,6 @@ void lcd_send_string(char *str) {
 
 void lcd_send_int(char *description, int num){
     char buffer[20];
-    sprintf(buffer, "%s: %d", description, num);
+    sprintf(buffer, "%s %d", description, num);
     lcd_send_string(buffer);
 }
